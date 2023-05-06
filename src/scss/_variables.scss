@@ -1,0 +1,54 @@
+
+$font-poppins: 'Poppins', sans-serif;
+$font-fira-sans: 'Fira Sans', sans-serif;
+
+//Jasper Colin Colors
+$jc-indigo-tint: #A5A0D4;
+$jc-red-tint: #E52E3A;
+$jc-red: #C01823;
+$jc-grey: #231F20;
+$jc-highlight: #FFFFFF;
+$jc-grey-tint: #828282;
+$jc-text: #DBCAFF;
+$jc-tangerine: #FF992C;
+
+//Solid Colors
+$navbar-white: #E1DFF1;
+$podcast-status: #2CC700;
+$blue-text: #2E2F86;
+$indigo-base: #02006C;
+$blue-tint: #3935FF;
+
+//gradient colors
+$gradient-horizontal: linear-gradient(95deg, #FF992C 15.11%, #E71B2B 78.94%);
+$gradient-vertical: linear-gradient(180deg, #FF992C 0%, #E71B2B 100%);
+$gradient-icon: linear-gradient(222.8deg, rgba(255, 255, 255, 0.4) 6.14%, rgba(255, 255, 255, 0) 100%);
+$gradient-blue-tint: linear-gradient(345.26deg, #01005F -1.76%, rgba(1, 0, 95, 0) 100%), #231F20;
+$gradient-navbar-linear: linear-gradient(90deg, rgba(4, 0, 147, 0) 0%, #01005F 50%, rgba(4, 0, 147, 0) 100%);
+
+//used in overriding bootstrap classes
+$jc-color-map: (
+  "jc-indigo-tint": $jc-indigo-tint,
+  "jc-red-tint": $jc-red-tint,
+  "jc-red": $jc-red,
+  "jc-grey": $jc-grey,
+  "jc-highlight": $jc-highlight,
+  "jc-grey-tint": $jc-grey-tint,
+  "jc-text": $jc-text,
+  "jc-tangerine": $jc-tangerine,
+  "navbar-white": $navbar-white,
+  "podcast-status": $podcast-status,
+  "blue-text": $blue-text,
+  "indigo-base": $indigo-base,
+  "blue-tint" : $blue-tint
+);
+$spacer: 1rem !default;
+$additional-spacer: (
+  6: $spacer * 3.5,
+  7: $spacer * 4.5,
+  8: $spacer * 5.5,
+  9: $spacer * 6.75,
+  10: $spacer * 8.75
+);
+
+$navbar-height : 119px;

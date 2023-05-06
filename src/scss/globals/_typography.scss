@@ -1,0 +1,358 @@
+@use '../variables';
+// Poppins Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap');
+
+// Poppins font
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+
+//Text/typography
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+
+@mixin typography($fontSize: 1rem, $fontWeight: 400) {
+  font-size: $fontSize !important;
+  font-weight: $fontWeight !important;
+}
+
+@mixin typographyXl($fontSize: 1rem) {
+  @include media-breakpoint-up(xl) {
+    font-size: $fontSize !important;
+  }
+}
+@mixin typographyXxl($fontSize: 1rem) {
+  @include media-breakpoint-up(xxl) {
+    font-size: $fontSize !important;
+  }
+}
+
+@mixin typographyXl($fontSize: 1rem) {
+
+  @include media-breakpoint-up(xl) {
+    font-size: $fontSize !important;
+  }
+}
+
+.FontPoppins {
+  font-family: variables.$font-poppins !important;
+}
+
+
+$font-family-base: variables.$font-fira-sans;
+$font-size-root: 1rem;
+
+$h1-font-size: 1.75rem;
+$h1-font-size-xl: 3rem;
+$h1-font-size-xxl: 4.5rem;
+$h1-font-weight: 600;
+
+$h2-font-size: 1.5rem;
+$h2-font-size-xl: 2.625rem;
+$h2-font-size-xxl: 4rem;
+$h2-font-weight: 700;
+
+$h3-font-size: 1.5rem;
+$h3-font-size-xl: 2.625rem;
+$h3-font-size-xxl: 4rem;
+$h3-font-weight: 400;
+
+$h4-font-size: 1.125rem;
+$h4-font-size-xl: 1.5rem;
+$h4-font-size-xxl: 2.5rem;
+$h4-font-weight: 700;
+
+$h5-font-size: 1.125rem;
+$h5-font-size-xl: 1.5rem;
+$h5-font-size-xxl: 2.5rem;
+$h5-font-weight: 300;
+
+body{
+
+  h1, .h1 { font-weight: $h1-font-weight !important; font-size: $h1-font-size !important; };
+  h2, .h2 { font-weight: $h2-font-weight !important; font-size: $h2-font-size !important; };
+  h3, .h3 { font-weight: $h3-font-weight !important; font-size: $h3-font-size !important; };
+  h4, .h4 { font-weight: $h4-font-weight !important; font-size: $h4-font-size !important; };
+  h5, .h5 { font-weight: $h5-font-weight !important; font-size: $h5-font-size !important; };
+  
+  @include media-breakpoint-up(xl){
+    h1, .h1 { font-size: calc($h1-font-size-xl) !important; };
+    h2, .h2 { font-size: calc($h2-font-size-xl) !important; };
+    h3, .h3 { font-size: calc($h3-font-size-xl) !important; };
+    h4, .h4 { font-size: calc($h4-font-size-xl) !important; };
+    h5, .h5 { font-size: calc($h5-font-size-xl) !important; };
+  }
+
+  @include media-breakpoint-up(xxl){
+    
+    h1, .h1 { font-size: $h1-font-size-xxl  !important; };
+    h2, .h2 { font-size: $h2-font-size-xxl  !important; };
+    h3, .h3 { font-size: $h3-font-size-xxl  !important; };
+    h4, .h4 { font-size: $h4-font-size-xxl  !important; };
+    h5, .h5 { font-size: $h5-font-size-xxl  !important; };
+  }
+}
+
+
+//landing title
+.T1 {
+  @include typography(4rem, 700);
+  @include typographyXl(4.375rem);
+  @include typographyXxl(6.25rem);
+}
+
+.T2 {
+  @include typography(2rem, 300);
+  @include typographyXl(3.125rem);
+  @include typographyXxl(5rem);
+}
+
+//Special cases
+.SP1 {
+  @include typography(1.75rem, 600);
+  @include typographyXl(3rem);
+  @include typographyXxl(4.25rem);
+}
+
+.SP2 {
+  @include typography(1.5rem, 500);
+  @include typographyXl(2.5rem);
+  @include typographyXxl(3.75rem);
+}
+
+.SP3 {
+  @include typography(.875rem, 400);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+}
+
+.SP4 {
+  @include typography(1.375rem, 700);
+  @include typographyXl(2.125rem);
+  @include typographyXxl(3rem);
+}
+
+//Subheads
+.S1 {
+  @include typography(1.5rem, 700);
+  @include typographyXl(1.625rem);
+  @include typographyXxl(2.5rem);
+}
+
+.S2 {
+  @include typography(1.5rem, 500);
+  @include typographyXl(1.625rem);
+  @include typographyXxl(2.5rem);
+}
+
+.S3 {
+  @include typography(1.5rem, 400);
+  @include typographyXl(1.625rem);
+  @include typographyXxl(2.5rem);
+}
+
+.S4 {
+  @include typography(1.25rem, 700);
+  @include typographyXl(1.5rem);
+  @include typographyXxl(2.25rem);
+}
+
+.S5 {
+  @include typography(1rem, 700);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+}
+
+.S6 {
+  @include typography(1.125rem, 500);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+}
+
+.S7 {
+  @include typography(1.125rem, 400);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+}
+
+.S8 {
+  @include typography(1.125rem, 300);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+}
+
+.S9 {
+  @include typography(1rem, 700);
+  @include typographyXl(1.125rem);
+  @include typographyXxl(1.75rem);
+}
+
+.S10 {
+  @include typography(1rem, 400);
+  @include typographyXl(1.125rem);
+  @include typographyXxl(1.75rem);
+}
+
+.S11 {
+  @include typography(.875rem, 400);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.5rem);
+}
+
+
+//Navigation
+.NB1 {
+  @include typography(2.25rem, 700);
+  @include typographyXl(1.375rem);
+  @include typographyXxl(2.25rem);
+}
+
+.NB2 {
+  @include typography(1.5rem, 700);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.5rem);
+}
+
+.NB3 {
+  @include typography(1.25rem, 600);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1.25rem);
+}
+
+//CTA
+.CTA1 {
+  @include typography(1rem, 600);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.25rem);
+}
+
+.CTA2 {
+  @include typography(.875rem, 500);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.25rem);
+}
+
+.CTA3 {
+  @include typography(.75rem, 700);
+  @include typographyXl(.875rem);
+  @include typographyXxl(.875rem);
+}
+
+.CTA4 {
+  @include typography(.75rem, 400);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1rem);
+}
+
+//Text Paragraph
+.TP1 {
+  @include typography(1rem, 600);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.25rem);
+}
+
+.TP2 {
+  @include typography(1rem, 500);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.25rem);
+}
+
+.TP3 {
+  @include typography(1rem, 400);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.25rem);
+}
+
+.TP4 {
+  @include typography(.875rem, 600);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1rem);
+}
+
+.TP5 {
+  @include typography(.875rem, 500);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1rem);
+}
+
+.TP6 {
+  @include typography(.875rem, 400);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1rem);
+}
+
+//Data To Decision
+.DTD1 {
+  @include typography(1.25rem, 700);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(1.75rem);
+}
+
+.DTD2 {
+  @include typography(1.25rem, 400);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(1.75rem);
+}
+
+.Copyright {
+  @include typography(.625rem, 400);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1rem);
+}
+
+//Caption Text
+.CT1 {
+  @include typography(1.125rem, 600);
+  @include typographyXl(1.25rem);
+  @include typographyXxl(2rem);
+  font-style: italic;
+}
+
+.CT2 {
+  @include typography(1rem, 700);
+  @include typographyXl(1.125rem);
+  @include typographyXxl(1.75rem);
+}
+
+.CT3 {
+  @include typography(1rem, 400);
+  @include typographyXl(1.125rem);
+  @include typographyXxl(1.75rem);
+}
+
+.CT4 {
+  @include typography(1.25rem, 500);
+  @include typographyXl(1rem);
+  @include typographyXxl(1.5rem);
+}
+
+.CT5 {
+  @include typography(.875rem, 700);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1.75rem);
+}
+
+.CT6 {
+  @include typography(.875rem, 600);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1.25rem);
+  font-style: italic;
+}
+
+.CT7 {
+  @include typography(.875rem, 500);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1.25rem);
+}
+
+.CT8 {
+  @include typography(.875rem, 400);
+  @include typographyXl(.875rem);
+  @include typographyXxl(1.25rem);
+}
+
+.CT9 {
+  @include typography(.75rem, 500);
+  @include typographyXl(.75rem);
+  @include typographyXxl(1rem);
+}

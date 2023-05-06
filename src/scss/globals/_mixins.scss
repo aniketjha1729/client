@@ -1,0 +1,8 @@
+@mixin TitleShort($lineClamp, $textOverflow: ellipsis) {
+    text-overflow: $textOverflow;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lineClamp;
+    white-space: pre-wrap;
+}
